@@ -18,3 +18,20 @@
 - 剧目数据存储在play.json文件
 - 开出的账单存储在invoices.json文件
 
+
+# Refactoring
+
+1. 提取函数 [commitID: b8fc88e]
+  - amountFor(performance)             
+2. 修改变量 [commitID: 85f60f7]
+  - thisAmount--->result
+  - 函数的返回值都命名为result
+3. 修改函数参数的变量名 [commitID: 56f473c]
+  - perf--->aPerformance
+  - 参数名带上类型名
+  - 无特殊情况使用不定冠词修饰
+4. 使用查询方法取代局部变量 [commitID: 9b33b80,8e1f9a7]
+  - play--->playFor(aPerformance)
+  - thisAmount--->amountFor(aPerformance)
+5. 提取函数 [commitID: edbbfc1]
+  - volumeCreditsFor(aPerformance)
