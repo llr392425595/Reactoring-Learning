@@ -1,4 +1,4 @@
-import { statement } from '../../Refactoring/printDramaBillingDetails'
+import { statement } from '../../SecondPractice/printDramaBillingDetails'
 
 import invoices from '../../data/invoices'
 import plays from '../../data/plays'
