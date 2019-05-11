@@ -8,7 +8,7 @@ function statement (invoice, plays) {
 function renderPlainText (data) {
   let result = `Statement for ${data.customer}\n`
   for (let perf of data.performances) {
-    result += `  ${pref.play.name}: ${usd(pref.amount)} (${perf.audience} seats)\n`
+    result += `  ${perf.play.name}: ${usd(perf.amount)} (${perf.audience} seats)\n`
   }
   result += `Amount owed is ${usd(data.totalAmount)}\n`
   result += `You earned ${data.totalVolumeCredits} credits\n`
@@ -33,3 +33,5 @@ function renderHtml (data) {
   result += `<p>You earned <em>${data.totalVolumeCredits}</em> credits</p>\n`;
   return result;
 }
+
+export { statement, htmlStatement }

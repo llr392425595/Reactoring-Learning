@@ -1,4 +1,4 @@
-{
+const plays = {
   "hamlet": {
     "name": "Hamlet",
     "type": "tragedy"
@@ -12,3 +12,5 @@
     "type": "tragedy"
   }
 }
+
+export default plays

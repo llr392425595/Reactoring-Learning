@@ -1,0 +1,26 @@
+{
+  "name": "reactoring-learning",
+  "version": "1.0.0",
+  "description": "Martin《重构》第二版的读书笔记",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/llr392425595/Reactoring-Learning.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/llr392425595/Reactoring-Learning/issues"
+  },
+  "homepage": "https://github.com/llr392425595/Reactoring-Learning#readme",
+  "dependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "babel-jest": "^24.8.0",
+    "jest": "^24.8.0"
+  }
+}

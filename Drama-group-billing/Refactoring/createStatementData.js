@@ -15,7 +15,7 @@ class PerformanceCalculator {
 
 class TragedyCalculator extends PerformanceCalculator {
   get amount() {
-    result = 40000;
+    let result = 40000;
     if (this.performance.audience > 30) {
       result += 1000 * (this.performance.audience - 30);
     }
@@ -25,11 +25,12 @@ class TragedyCalculator extends PerformanceCalculator {
 
 class ComedyCalculator extends PerformanceCalculator {
   get amount() {
-    result = 30000;
+    let result = 30000;
     if (this.performance.audience > 20) {
       result += 10000 + 500 * (this.performance.audience - 20);
     }
     result += 300 * this.performance.audience;
+    return result
   }
 
   get volumeCredits () {
@@ -67,7 +68,7 @@ function createStatementData (invoice, plays) {
   }
 
   function playFor (aPerformance) {
-    return plays[aPerformance.playId]
+    return plays[aPerformance.playID]
   }
 
   function totalAmount(data) {
